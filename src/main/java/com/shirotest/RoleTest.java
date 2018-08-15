@@ -20,6 +20,7 @@ public class RoleTest extends BaseTest {
 	@Test
     public void test() {
 		//test conflict
+		System.out.println("one");
 		DefaultHashService hashService = new DefaultHashService(); //默认算法SHA-512
 		hashService.setHashAlgorithmName("SHA-512");
 		hashService.setPrivateSalt(new SimpleByteSource("123")); //私盐，默认无
